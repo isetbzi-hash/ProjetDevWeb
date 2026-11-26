@@ -3,121 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez les circuits et excursions de Bizerte Voyages dans le nord de la Tunisie.">
   <title>Bizerte Voyages – Circuits et excursions</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Styles personnalisés : à charger après Bootstrap -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== EN-TÊTE ===== -->
+  <!-- ===== NAVIGATION ===== -->
   <header id="entete">
-    <h1>Bizerte Voyages</h1>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#circuits">Nos circuits</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#devis">Demande de devis</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#accueil">Bizerte Voyages</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Afficher le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#circuits">Nos circuits</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#devis">Demande de devis</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
-
     <!-- ===== HERO ===== -->
-    <section id="accueil">
-      <h2>Découvrez le nord de la Tunisie</h2>
-      <p>Lacs, plages, remparts et ports de pêche : l'agence Bizerte Voyages vous emmène à la rencontre de la région, avec des guides locaux et des départs tous les week-ends.</p>
-      <p>Ouverture de la saison d'été : réservez dès maintenant votre excursion.</p>
-      <a href="#devis">Demander un devis</a>
-      <a href="#circuits">Voir nos circuits</a>
-      <img src="images/hero.jpg" alt="Vue du vieux port de Bizerte au coucher du soleil">
+    <section id="accueil" class="hero-section text-white text-center py-5">
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <h1 class="display-4 fw-bold mb-4">Découvrez le nord de la Tunisie</h1>
+            <p class="lead">
+              Lacs, plages, remparts et ports de pêche : l'agence Bizerte Voyages
+              vous emmène à la rencontre de la région, avec des guides locaux et
+              des départs tous les week-ends.
+            </p>
+            <p class="mb-4">Ouverture de la saison d'été : réservez dès maintenant votre excursion.</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-2">
+              <a class="btn btn-primary btn-lg" href="#devis">Demander un devis</a>
+              <a class="btn btn-outline-light btn-lg" href="#circuits">Voir nos circuits</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <img src="images/hero.jpg" class="img-fluid rounded-4 shadow"
+              alt="Vue du vieux port de Bizerte au coucher du soleil">
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ===== CIRCUITS ===== -->
-    <section id="circuits">
-      <h2>Nos circuits</h2>
+    <section id="circuits" class="container py-5">
+      <h2 class="text-center fw-bold mb-4">Nos circuits</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img src="images/ichkeul.jpg" class="card-img-top circuit-image"
+              alt="Lac et montagne du parc national de l'Ichkeul">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Parc national de l'Ichkeul</h3>
+              <p class="card-text">
+                Une journée au bord du lac, classé au patrimoine mondial de l'UNESCO :
+                observation des oiseaux migrateurs et randonnée facile jusqu'au sommet
+                du Djebel Ichkeul.
+              </p>
+              <p class="card-text fw-semibold mt-auto">Durée : 1 jour · Prix : 45 DT par personne</p>
+              <a href="#devis" class="btn btn-primary w-100">Réserver</a>
+            </div>
+          </article>
+        </div>
 
-      <article>
-        <img src="images/ichkeul.jpg" class="im" alt="Lac et montagne du parc national de l'Ichkeul">
-        <h3>Parc national de l'Ichkeul</h3>
-        <p>Une journée au bord du lac, classé au patrimoine mondial de l'UNESCO : observation des oiseaux migrateurs et randonnée facile jusqu'au sommet du Djebel Ichkeul.</p>
-        <p>Durée : 1 jour · Prix : 45 DT par personne</p>
-        <a href="#devis">Réserver</a>
-      </article>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img src="images/ghar-el-melh.jpg" class="card-img-top circuit-image"
+              alt="Port de Ghar El Melh et ses barques de pêche">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge text-bg-danger">−20 %</span></div>
+              <h3 class="card-title h5">Ghar El Melh et Raf Raf</h3>
+              <p class="card-text">
+                Le charmant port andalou de Ghar El Melh, puis une pause baignade
+                sur la plage de Raf Raf et un déjeuner de poisson frais face à la mer.
+              </p>
+              <p class="card-text fw-semibold mt-auto">Durée : 1 jour · Prix : 55 DT par personne</p>
+              <a href="#devis" class="btn btn-primary w-100">Réserver</a>
+            </div>
+          </article>
+        </div>
 
-      <article>
-        <img src="images/ghar-el-melh.jpg" class="im" alt="Port de Ghar El Melh et ses barques de pêche">
-        <h3>Ghar El Melh et Raf Raf</h3>
-        <p>Le charmant port andalou de Ghar El Melh, puis une pause baignade sur la plage de Raf Raf et un déjeuner de poisson frais face à la mer.</p>
-        <p>Durée : 1 jour · Prix : 55 DT par personne</p>
-        <a href="#devis">Réserver</a>
-      </article>
-
-      <article>
-        <img src="images/cap-blanc.jpg" class="im" alt="Falaises blanches du Cap Blanc">
-        <h3>Bizerte, Cap Blanc et Vieux Port</h3>
-        <p>Une demi-journée pour visiter la Kasbah, flâner dans le Vieux Port, puis rejoindre le Cap Blanc, point le plus septentrional du continent africain.</p>
-        <p>Durée : demi-journée · Prix : 30 DT par personne</p>
-        <a href="#devis">Réserver</a>
-      </article>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 shadow-sm">
+            <img src="images/cap-blanc.jpg" class="card-img-top circuit-image"
+              alt="Falaises blanches du Cap Blanc">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Bizerte, Cap Blanc et Vieux Port</h3>
+              <p class="card-text">
+                Une demi-journée pour visiter la Kasbah, flâner dans le Vieux Port,
+                puis rejoindre le Cap Blanc, point le plus septentrional du continent africain.
+              </p>
+              <p class="card-text fw-semibold mt-auto">Durée : demi-journée · Prix : 30 DT par personne</p>
+              <a href="#devis" class="btn btn-primary w-100">Réserver</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <!-- ===== GALERIE ===== -->
-    <section id="galerie">
-      <h2>Galerie</h2>
-      <img src="images/galerie-1.jpg" alt="Plage de sable fin près de Bizerte">
-      <img src="images/galerie-2.jpg" alt="Remparts de la Kasbah de Bizerte">
-      <img src="images/galerie-3.jpg" alt="Flamants roses sur le lac">
-      <img src="images/galerie-4.jpg" alt="Ruelle blanche et bleue">
-      <img src="images/galerie-5.jpg" alt="Pêcheurs réparant leurs filets">
-      <img src="images/galerie-6.jpg" alt="Coucher de soleil sur la mer">
+    <section id="galerie" class="container py-5">
+      <h2 class="text-center fw-bold mb-4">Galerie</h2>
+      <div class="row g-3">
+        <div class="col-6 col-lg-4"><img src="images/galerie-1.jpg" class="img-fluid rounded-3 shadow-sm gallery-image" alt="Plage de sable fin près de Bizerte"></div>
+        <div class="col-6 col-lg-4"><img src="images/galerie-2.jpg" class="img-fluid rounded-3 shadow-sm gallery-image" alt="Remparts de la Kasbah de Bizerte"></div>
+        <div class="col-6 col-lg-4"><img src="images/galerie-3.jpg" class="img-fluid rounded-3 shadow-sm gallery-image" alt="Flamants roses sur le lac"></div>
+        <div class="col-6 col-lg-4"><img src="images/galerie-4.jpg" class="img-fluid rounded-3 shadow-sm gallery-image" alt="Ruelle blanche et bleue"></div>
+        <div class="col-6 col-lg-4"><img src="images/galerie-5.jpg" class="img-fluid rounded-3 shadow-sm gallery-image" alt="Pêcheurs réparant leurs filets"></div>
+        <div class="col-6 col-lg-4"><img src="images/galerie-6.jpg" class="img-fluid rounded-3 shadow-sm gallery-image" alt="Coucher de soleil sur la mer"></div>
+      </div>
     </section>
 
     <!-- ===== FORMULAIRE DE DEVIS ===== -->
-    <section id="devis">
-      <h2>Demande de devis</h2>
-      <p>Remplissez ce formulaire : nous vous répondons sous 24 heures.</p>
+    <section id="devis" class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <h2 class="text-center fw-bold mb-3">Demande de devis</h2>
+          <p class="text-center mb-4">Remplissez ce formulaire : nous vous répondons sous 24 heures.</p>
 
-      <form action="#" method="post">
-        <label for="nom">Nom et prénom</label>
-        <input type="text" id="nom" name="nom">
+          <form action="#" method="post" class="p-4 border rounded-4 shadow-sm">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom et prénom</label>
+              <input type="text" class="form-control" id="nom" name="nom" autocomplete="name" required>
+            </div>
 
-        <label for="email">Adresse e-mail</label>
-        <input type="email" id="email" name="email">
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse e-mail</label>
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+            </div>
 
-        <label for="tel">Téléphone</label>
-        <input type="tel" id="tel" name="tel">
+            <div class="mb-3">
+              <label for="tel" class="form-label">Téléphone</label>
+              <input type="tel" class="form-control" id="tel" name="tel" autocomplete="tel">
+            </div>
 
-        <label for="circuit">Circuit souhaité</label>
-        <select id="circuit" name="circuit">
-          <option value="">Choisir un circuit</option>
-          <option value="ichkeul">Parc national de l'Ichkeul</option>
-          <option value="ghar-el-melh">Ghar El Melh et Raf Raf</option>
-          <option value="cap-blanc">Bizerte, Cap Blanc et Vieux Port</option>
-        </select>
+            <div class="mb-3">
+              <label for="circuit" class="form-label">Circuit souhaité</label>
+              <select class="form-select" id="circuit" name="circuit" required>
+                <option value="" selected disabled>Choisir un circuit</option>
+                <option value="ichkeul">Parc national de l'Ichkeul</option>
+                <option value="ghar-el-melh">Ghar El Melh et Raf Raf</option>
+                <option value="cap-blanc">Bizerte, Cap Blanc et Vieux Port</option>
+              </select>
+            </div>
 
-        <label for="voyageurs">Nombre de voyageurs</label>
-        <input type="number" id="voyageurs" name="voyageurs" min="1" max="30" value="2">
+            <div class="mb-3">
+              <label for="voyageurs" class="form-label">Nombre de voyageurs</label>
+              <input type="number" class="form-control" id="voyageurs" name="voyageurs" min="1" max="30" value="2" required>
+            </div>
 
-        <label for="date">Date de départ</label>
-        <input type="date" id="date" name="date">
+            <div class="mb-3">
+              <label for="date" class="form-label">Date de départ</label>
+              <input type="date" class="form-control" id="date" name="date">
+            </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+            </div>
 
-        <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Je souhaite recevoir la newsletter</label>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+              <label class="form-check-label" for="newsletter">Je souhaite recevoir la newsletter</label>
+            </div>
 
-        <button type="submit">Envoyer ma demande</button>
-      </form>
+            <button type="submit" class="btn btn-primary btn-lg w-100">Envoyer ma demande</button>
+          </form>
+
+          <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+            <strong>Merci !</strong> Votre demande est prête à être envoyée. (Le formulaire nécessite un service serveur pour transmettre réellement les réponses.)
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+          </div>
+        </div>
+      </div>
     </section>
-
   </main>
 
   <!-- ===== PIED DE PAGE ===== -->
-  <footer>
-    <p>Bizerte Voyages · 12 avenue Habib Bourguiba, 7000 Bizerte</p>
-    <p>Téléphone : 72 00 00 00 · contact@bizerte-voyages.example</p>
+  <footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center text-center gap-2">
+      <p class="mb-0">Bizerte Voyages · 12 avenue Habib Bourguiba, 7000 Bizerte</p>
+      <span class="d-none d-md-inline">|</span>
+      <p class="mb-0">Téléphone : 72 00 00 00 · contact@bizerte-voyages.example</p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JavaScript (nécessaire au menu burger et à l'alerte) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

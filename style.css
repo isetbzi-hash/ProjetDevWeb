@@ -1,0 +1,22 @@
+/*
+  Bizerte Voyages
+  Le hero est le seul endroit où le CSS personnalisé est utilisé,
+  conformément à l'atelier. Les autres mises en page utilisent Bootstrap.
+*/
+.hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+    url("images/hero.jpg") center / cover no-repeat;
+}
+
+/* Ajustement d'affichage des photos sans modifier la grille Bootstrap. */
+.circuit-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}

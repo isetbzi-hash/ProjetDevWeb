@@ -1,177 +1,43 @@
-# 🎬 THE EPIC CINEMATIC PRODUCTION
+# Bizerte Voyages — Atelier 4
 
-**AN ALI BEN FATTOUM PRODUCTION**
+Projet réalisé selon le document **Atelier 4 — Bootstrap et Déploiement**.
 
----
+## Structure
 
-# ALI BEN FATTOUM
-## THE LEGEND NEVER ENDS
+```text
+Atelier4-bizerte-voyages/
+├── index.html
+├── style.css
+├── images/
+│   └── (ajouter ici les 10 photos demandées)
+└── fichiers/
+    ├── procedure-deploiement.md
+    └── checklist-validation.md
+```
 
-*A motion picture event*
+## Images à ajouter
 
----
+Placer les photos fournies par l'enseignant dans `images/` avec exactement ces noms :
 
-## STARRING
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
+- `hero.jpg`
+- `ichkeul.jpg`
+- `ghar-el-melh.jpg`
+- `cap-blanc.jpg`
+- `galerie-1.jpg`
+- `galerie-2.jpg`
+- `galerie-3.jpg`
+- `galerie-4.jpg`
+- `galerie-5.jpg`
+- `galerie-6.jpg`
 
-## DIRECTED BY
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
+Les images ne figuraient pas parmi les fichiers joints à la demande. Le dossier contient donc cette notice, et les photos doivent être ajoutées avant la livraison finale et les tests.
 
-## WRITTEN BY
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
+## Lancer en local
 
-## EXECUTIVE PRODUCERS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
+Ouvrir le dossier dans VS Code, puis lancer `index.html` avec Live Server.
 
-## PRODUCED BY
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
+Bootstrap 5.3.3 est chargé par CDN : une connexion Internet est nécessaire.
 
-## ASSOCIATE PRODUCERS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
+## Déploiement
 
-## DIRECTOR OF PHOTOGRAPHY
-- Ali Ben Fattoum
-
-## CAMERA OPERATORS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## CINEMATOGRAPHY
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## FILM EDITING
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## ASSISTANT EDITORS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## MUSIC COMPOSED BY
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## ORIGINAL SOUNDTRACK
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## SOUND DESIGN
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## SOUND MIXING
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## VISUAL EFFECTS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## SPECIAL EFFECTS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## PRODUCTION DESIGN
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## ART DIRECTION
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## COSTUME DESIGN
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## MAKEUP AND HAIR
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## LOCATION MANAGER
-- Ali Ben Fattoum
-
-## CASTING DIRECTOR
-- Ali Ben Fattoum
-
-## STUNT COORDINATOR
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## LIGHTING DEPARTMENT
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## GRIP DEPARTMENT
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## POST-PRODUCTION
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## MARKETING AND PROMOTION
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## PUBLIC RELATIONS
-- Ali Ben Fattoum
-
-## DISTRIBUTION
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## LEGAL DEPARTMENT
-- Ali Ben Fattoum
-
-## FINANCIAL MANAGEMENT
-- Ali Ben Fattoum
-
-## TECHNICAL SUPPORT
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## PRODUCTION ASSISTANTS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## SPECIAL THANKS
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
-## DEDICATED TO
-- Ali Ben Fattoum
-- Ali Ben Fattoum
-
----
-
-# THE END
-
-**A FILM BY ALI BEN FATTOUM**
-
-*No Ali Ben Fattoum was harmed during the making of this film.*
-
-**EVERY ROLE. EVERY SCENE. EVERY LEGEND.**
-
-# ALI BEN FATTOUM PICTURES © 2026
-
-*All rights reserved.*
+Consulter `fichiers/procedure-deploiement.md` et valider les points de `fichiers/checklist-validation.md`.
